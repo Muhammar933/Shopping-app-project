@@ -1,11 +1,24 @@
-<div align="center">
+# THREADLY — "WEAR YOUR STYLE."
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+> A production-grade mobile e-commerce platform and modular monolith backend for a luxury T-shirt clothing brand featuring **Virtual Try-On**.
 
-  <h1>Built with AI Studio</h2>
+---
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Highlights
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+- 📱 **Mobile App (`/mobile`)**: React Native + Expo (Expo Router), Zustand, Axios, React Native Paper / Tailwind styling.
+- ⚙️ **Modular Monolith Backend (`/backend`)**: Node.js, Express, TypeScript, Zod, and JWT Auth.
+- 🗄️ **Database (`/prisma`)**: PostgreSQL with Prisma ORM, complete with 22+ premium T-shirts, variants, reviews, and test orders.
+- 📸 **Virtual Try-On**: Dedicated AI try-on pipeline with provider abstraction (`VirtualTryOnService` -> `MockVirtualTryOnService`).
+- 💳 **Payment Gateway Abstraction**: Pluggable `IPaymentService` with `MockPaymentService`.
+- 📦 **DevOps-Ready**: Completely decoupled from infrastructure so you can containerize with Docker, CI/CD, AWS, or Kubernetes as you see fit.
 
-</div>
+---
+
+## Directory Navigation
+
+- `/mobile` - React Native Expo mobile application
+- `/backend` - Express + TypeScript modular backend
+- `/prisma` - Database schema & seed data
+- `/docs` - Architecture, API, Database, and Try-On documentation
+- `/src` - Interactive live mobile application simulator running in the preview environment

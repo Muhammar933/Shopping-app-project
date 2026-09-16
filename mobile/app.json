@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "THREADLY",
+    "slug": "threadly",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "threadly",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#121212"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "studio.threadly.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Threadly requires camera access to let you virtually try on our T-shirt collection.",
+        "NSPhotoLibraryUsageDescription": "Threadly requires photo access to select your photo for virtual try-on."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#121212"
+      },
+      "package": "studio.threadly.app",
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE"]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Threadly needs access to your camera to let you try on T-shirts."
+        }
+      ]
+    ]
+  }
+}
